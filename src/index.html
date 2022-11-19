@@ -7,6 +7,7 @@
     <title>Prednet Network - MOBA Tactics Website Network @ Prednet</title>
     <script src="https://kit.fontawesome.com/62ffc96575.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="scss/main.scss">
+    <script src="ts/main.ts" type="module"></script>
 </head>
 <body>
     <!-- Start -->
@@ -14,12 +15,12 @@
         <nav>
             <ul>
                 <li id="nav-links">
-                    <i>Home</i>
-                    <i>Guides</i>
-                    <i>Heroes</i>
+                    <i><a>Home</a></i>
+                    <i><a>Guides</a></i>
+                    <i><a>Heroes</a></i>
                 </li>
                 <li id="icon">
-                    <i class="fa-solid fa-user"></i>
+                    <a><i class="fa-solid fa-user"></i></a>
                 </li>
             </ul>
         </nav>
@@ -31,5 +32,63 @@
         </div>
     </section>
     <!-- End Start -->
+
+    <section class="item2">
+        <h1>TOP GUIDES</h1>
+        <ul id="top-guides">
+            <li>
+                <img src="assets/portraits/Drongo.png" alt="Avatar" class="top-avatar" id="top-avatar-1">
+                <div class="top-details" id="top-details-1">
+                    <p> 
+                        Drongo ATK | Crit DMG 💥<br>
+                        Rating: <span>9/10</span><br>
+                        Author: tritan
+                    </p>
+                </div>
+                <div class="top-desc" id="top-desc-1">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet nesciunt veniam esse quod molestias commodi...</p>
+                </div>
+            </li>
+            <li>
+                <img src="assets/portraits/Feng-Mao.png" alt="Avatar" class="top-avatar" id="top-avatar-2">
+                <div class="top-details" id="top-details-2">
+                    <p> 
+                        Feng Mao ATK | AD DMG<br>
+                        Rating: <span>10/10</span><br>
+                        Author: tritan
+                    </p>
+                </div>
+                <div class="top-desc" id="top-desc-2">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet nesciunt veniam esse quod molestias commodi...</p>
+                </div>
+            </li>
+            <li>
+                <img src="assets/portraits/Gadget.png" alt="Avatar" class="top-avatar" id="top-avatar-3">
+                <div class="top-details" id="top-details-2">
+                    <p> 
+                        Feng Mao ATK | AD DMG<br>
+                        Rating: <span>10/10</span><br>
+                        Author: tritan
+                    </p>
+                </div>
+                <div class="top-desc" id="top-desc-2">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet nesciunt veniam esse quod molestias commodi...</p>
+                </div>
+            </li>
+            <li>
+                <img src="assets/portraits/Gideon.png" alt="Avatar" class="top-avatar" id="top-avatar-4">
+                <div class="top-details" id="top-details-2">
+                    <p> 
+                        Feng Mao ATK | AD DMG<br>
+                        Rating: <span>10/10</span><br>
+                        Author: tritan
+                    </p>
+                </div>
+                <div class="top-desc" id="top-desc-2">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet nesciunt veniam esse quod molestias commodi...</p>
+                </div>
+            </li>
+        </ul>
+    </section>
 </body>
 </html>

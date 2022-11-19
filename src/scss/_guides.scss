@@ -1,0 +1,16 @@
+@use "variables" as var;
+@use "mixins" as m;
+
+.item2{
+    span{
+        color: rgb(0, 255, 42);
+    }
+    #top-guides{
+        display: grid;
+        grid-template-columns: auto;
+        li{
+            display: grid;
+            height: 250px;
+        }
+    }
+}

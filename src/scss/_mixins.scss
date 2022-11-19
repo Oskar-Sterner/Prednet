@@ -1,5 +1,19 @@
 @use "variables" as var;
 
+/* Button on hover effect */
+
+@mixin a-hover {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Top-guides */
+
+@mixin top-guides-panel{
+    border-radius: 25px;
+    background-color: var.$bg-secondary;
+}
+
 /* Breakpoint Mixins */
 
 @mixin phone-screen {

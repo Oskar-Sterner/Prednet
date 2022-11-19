@@ -1,0 +1,9 @@
+@use "variables" as var;
+
+/* Breakpoint Mixins */
+
+@mixin phone-screen {
+    @media only screen and (max-width: 420px) {
+        @content;
+    }
+}

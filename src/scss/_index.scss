@@ -1,0 +1,21 @@
+@use "variables" as var;
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+
+html, body{
+    color: var.$white;
+    margin: 0;
+    background-color: var.$bg;
+    font-family: 'Prompt', sans-serif;
+    ul{
+        list-style-type: none!important;
+        list-style: none!important;
+        margin-block-start: 0!important;
+        margin-block-end: 0!important;
+        padding-inline-start: 0!important;
+        li{
+            i{
+                font-style: normal!important;
+            }
+        }
+    }
+}

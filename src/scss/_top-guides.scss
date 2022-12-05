@@ -1,0 +1,44 @@
+@use "variables" as var;
+@use "mixins" as m;
+
+#item2{
+    span{
+        color: rgb(0, 255, 42);
+    }
+    #top-guides{
+        display: grid;
+        grid-template-columns: auto;
+        .top-avatar{
+            grid-area: avatar;
+            border-radius: 50%;
+            width: 75px;
+            margin-top: 15px;
+            margin-left: 15px;
+            border: 2px solid;
+            border-image-slice: 1;
+        }
+        .border-orange{
+            @include m.border-orange;
+        }
+        .border-magenta{
+            @include m.border-magenta;
+        }
+        .border-yellow{
+            @include m.border-yellow;
+        }
+        .border-blue{
+            @include m.border-blue;
+        }
+        .border-green{
+            @include m.border-green;
+        }
+        li{
+            display: grid;
+            height: 250px;
+            transition: 300ms;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+}

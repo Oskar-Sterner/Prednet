@@ -61,11 +61,15 @@
         text-align: left;
         padding: 10px 15px 10px 15px;
         margin-bottom: 25px;
+        transition: 300ms;
         .post-stats{
             display: flex;
             p{
                 margin-right: 20px;
                 line-height: 33px;
             }
+        }
+        &:hover{
+            transform: scale(1.03);
         }
     }

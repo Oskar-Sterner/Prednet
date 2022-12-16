@@ -75,13 +75,13 @@
 /* About */
 #item3{
     position: relative;
-    height: 100vh;
+    height: 100vh!important;
     background-image: url(../assets/about-bg.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    background-position: -334px;
+    background-position: -334px!important;
     .about{
         display: flex;
         text-align: center;
@@ -93,7 +93,7 @@
         }
         .about-info{
             margin: 0 auto;
-            width: 75%;
+            width: 75%!important;
             height: auto;
             background-color: var.$bg;
             border-radius: 25px;
@@ -128,7 +128,8 @@
                 @include m.post-mobile;
                 height: auto;
                 display: flex;
-                flex-direction: column; 
+                flex-direction: column;
+                width: 85%!important;
                 li{
                     i{
                         p{
@@ -183,7 +184,7 @@
             form{
                 display: flex;
                 flex-direction: column;
-                width: 80%;
+                width: 80%!important;
                 margin: 0 auto;
                 text-align: left;
                 label{

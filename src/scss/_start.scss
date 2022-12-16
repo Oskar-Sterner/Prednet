@@ -25,9 +25,22 @@
             }
         }
     nav{
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        font-size: 25px;
+        background-color: rgba(0, 0, 0, 0.25);
         ul{
+            display: flex;
+            justify-content: space-between;
+            padding-inline-start: 20px!important;
+            padding-inline-end: 20px!important;
+            #nav-links{
+                margin-top: 5px;
+            }
             li{
                 i{
+                    margin: 10px;
                     a{
                         transition: 300ms;
                         &:hover{

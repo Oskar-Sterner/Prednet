@@ -1,2 +1,38 @@
 @use "variables" as var;
 @use "mixins" as m;
+
+/* About */
+#item3{
+    position: relative;
+    height: 650px;
+    background-image: url(../assets/about-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    .about{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        row-gap: 25px;
+        h1{
+            margin: 0 auto;
+            margin-top: 25px;
+        }
+        .about-info{
+            margin: 0 auto;
+            width: 50%;
+            height: auto;
+            background-color: var.$bg;
+            border-radius: 25px;
+            padding: 25px;
+                p{
+                    text-align: left;
+                }
+                img{
+                    width: 250px;
+                }
+            }
+        }
+    }
+/* End About */

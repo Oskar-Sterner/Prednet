@@ -1,7 +1,4 @@
-let profileButton = document.getElementById("profile-btn");
+import { displayLogin } from "./universal-functions/functions";
+let profileButton = document.getElementById("icon") as HTMLLIElement;
 
-profileButton?.addEventListener("click", function handleClick(event){
-    console.log("haha");
-    console.log(event);
-    console.log(event.target);
-});
+profileButton.addEventListener("click", displayLogin);

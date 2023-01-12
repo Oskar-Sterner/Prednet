@@ -1,0 +1,76 @@
+@use "variables" as var;
+
+/* Button on hover effect */
+
+@mixin a-hover {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Top-guides */
+
+@mixin top-guides-panel{
+    border-radius: 25px;
+    background-color: var.$bg-secondary;
+}
+
+    /* Top Guides Borders */
+
+    @mixin border-orange{
+        border: 2px solid orange;
+    }
+
+    @mixin border-magenta {
+        border: 2px solid magenta;
+    }
+
+    @mixin border-yellow {
+        border: 2px solid yellow;
+    }
+
+    @mixin border-blue {
+        border: 2px solid blue;
+    }
+
+    @mixin border-green {
+        border: 2px solid green;
+    }
+
+    @mixin border-red {
+        border: 2px solid red;
+    }
+
+/* Breakpoint Mixins */
+
+@mixin phone-screen {
+    @media only screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+/* Community */
+
+    /* Post */
+
+    @mixin post-mobile {
+        width: 85%;
+        height: 100px;
+        background-color: var.$bg-secondary;
+        border-radius: 10px;
+        margin: 0 auto;
+        text-align: left;
+        padding: 10px 15px 10px 15px;
+        margin-bottom: 25px;
+        transition: 300ms;
+        .post-stats{
+            display: flex;
+            p{
+                margin-right: 20px;
+                line-height: 33px;
+            }
+        }
+        &:hover{
+            transform: scale(1.02);
+            cursor: pointer;
+        }
+    }

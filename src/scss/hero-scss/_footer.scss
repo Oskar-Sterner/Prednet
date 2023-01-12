@@ -1,0 +1,14 @@
+@use "variables" as var;
+@use "mixins" as m;
+
+.item6{
+    position: relative;
+    height: 20px;
+    background-color: var.$bg;
+    text-align: center;
+    p{
+        font-size: 13px;
+        margin-block-start: 0px;
+        margin-block-end: 0px;
+    }
+}

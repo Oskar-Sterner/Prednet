@@ -1,9 +1,17 @@
 {
   "dependencies": {
+    "@parcel/config-default": "^2.8.2",
     "parcel-bundler": "^1.12.5"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.2",
+    "@parcel/transformer-typescript-tsc": "^2.8.2",
+    "@parcel/validator-typescript": "^2.8.2",
+    "parcel": "^2.8.2",
     "sass": "^1.56.1",
     "typescript": "^4.9.3"
+  },
+  "scripts": {
+    "start": "npx parcel src/index.html src/heroes.html"
   }
 }

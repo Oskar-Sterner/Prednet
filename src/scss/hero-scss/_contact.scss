@@ -1,0 +1,79 @@
+@use "variables" as var;
+@use "mixins" as m;
+
+/* Contact */
+.item5{
+    position: relative;
+    height: 420px;
+    background-image: url(../../assets/about-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+        .contact{
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            h1{
+                letter-spacing: 2px;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                width: 52%;
+                margin: 0 auto;
+                text-align: left;
+                label{
+                    margin-bottom: 3px;
+                }
+                input{
+                    padding: 5px;
+                    color: white;
+                    outline: none;
+                    border-radius: 5px;
+                    margin-bottom: 8px;
+                    background: rgba(99, 130, 133, 0.2);
+                    border-radius: 16px;
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    backdrop-filter: blur(5px);
+                    -webkit-backdrop-filter: blur(5px);
+                    border: none;
+                    &:focus{
+                        outline: none;
+                        border: none;
+                    }
+                }
+                textarea{
+                    color: white;
+                    border: none;
+                    outline: none;
+                    resize: none;
+                    padding: 5px;
+                    border-radius: 5px;
+                    margin-bottom: 15px;
+                    background: rgba(99, 130, 133, 0.2);
+                    border-radius: 16px;
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    backdrop-filter: blur(5px);
+                    -webkit-backdrop-filter: blur(5px);
+                    &:focus{
+                        outline: none;
+                        border: none;
+                    }
+                }
+                input[type=submit]{
+                    background-color: var.$button;
+                    transition: 300ms;
+                    color: var.$white;
+                    &:hover{
+                        background-color: var.$primary;
+                        color: var.$bg;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+/* End Contact */

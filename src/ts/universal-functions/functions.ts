@@ -69,3 +69,13 @@ export function displayLogin(){
         }
     }
 }
+
+export function displayHeroes(){
+    let heroContainer: HTMLDivElement = document.createElement("div");
+
+    heroContainer.setAttribute("id", "hero-container");
+
+    (document.querySelector("#main-container") as HTMLElement).appendChild(
+        heroContainer
+    );
+}
